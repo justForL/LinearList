@@ -12,11 +12,13 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         LJListArray *array1 = createList(10);
-        LJListArray *array2 = createList(10);
-        LJListArray *array3 = createList(10);
-        printf("%p\n",array1);
-        printf("%p\n",array2);
-        printf("%p\n",array3);
+        addData(array1, (LJValuesNode)3);
+        addData(array1, (LJValuesNode)4);
+        addData(array1, (LJValuesNode)5);
+        addData(array1, (LJValuesNode)6);
+        addData(array1, (LJValuesNode)7);
+        arrayPrint(array1);
+        
     }
     return 0;
 }

@@ -111,4 +111,12 @@ void delateData(LJListArray *array, int index);
  */
 void delateAllDataInArray(LJListArray *array, LJValuesNode value);
 
+
+/** 打印当前线性表 */
+void arrayPrint(LJListArray * array);
+
+
+/** 打印线性表里面的值 */
+void arrayPrintValues(LJListArray * array);
+
 #endif /* LJListArray_h */

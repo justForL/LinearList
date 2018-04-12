@@ -120,3 +120,29 @@ void delateAllDataInArray(LJListArray *array, LJValuesNode value) {
     
     array->length -= removeCount;
 }
+
+
+void arrayPrintValues(LJListArray * array){
+    printf("[");
+    for (int i = 0; i < array->length; i++) {
+        printf("%p",array->value[i]);
+        if (i < array->length - 1) {
+            printf(",");
+        }
+    }
+    printf("];\n");
+}
+
+void arrayPrint(LJListArray *array){
+    if (array == NULL) {
+        return;
+    }
+    printf("list{\n");
+    printf("\tlength = %d\n",array->length);
+    printf("\tcapacity = %d\n",array->capacity);
+    printf("\tvalues = ");
+    arrayPrintValues(array);
+    printf("}\n\n");
+    
+}
+
