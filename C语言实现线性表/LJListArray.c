@@ -102,3 +102,21 @@ void delateData(LJListArray *array, int index) {
     array->length--;
 }
 
+
+void delateAllDataInArray(LJListArray *array, LJValuesNode value) {
+    if (array == NULL || value == NULL) {
+        return;
+    }
+    //记录需要删除的数据的位置偏移量
+    int removeCount = 0;
+    //遍历线性表
+    for (int i = 0; i<array->length; i++) {
+        if (array->value[i] == value) {     //需要删除
+            removeCount++;
+        }else{                              //不需要删除
+            array->value[i-removeCount] = array->value[i];
+        }
+    }
+    
+    array->length -= removeCount;
+}

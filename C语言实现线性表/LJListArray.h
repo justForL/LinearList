@@ -103,5 +103,12 @@ void setData(LJListArray *array, int index, LJValuesNode value);
 void delateData(LJListArray *array, int index);
 
 
+/**
+ 删除在线性表中所有位置上的某一数据
+ 
+ @param array array
+ @param value value
+ */
+void delateAllDataInArray(LJListArray *array, LJValuesNode value);
 
 #endif /* LJListArray_h */
