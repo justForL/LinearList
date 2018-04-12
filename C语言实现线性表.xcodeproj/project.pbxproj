@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A78B177207F0D6400929A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A78B176207F0D6400929A0A /* main.m */; };
+		1A78B17F207F1CCC00929A0A /* LJListArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A78B17E207F1CCC00929A0A /* LJListArray.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		1A78B173207F0D6400929A0A /* C语言实现线性表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C语言实现线性表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A78B176207F0D6400929A0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A78B17D207F1CCC00929A0A /* LJListArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJListArray.h; sourceTree = "<group>"; };
+		1A78B17E207F1CCC00929A0A /* LJListArray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LJListArray.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				1A78B176207F0D6400929A0A /* main.m */,
+				1A78B17D207F1CCC00929A0A /* LJListArray.h */,
+				1A78B17E207F1CCC00929A0A /* LJListArray.c */,
 			);
 			path = "C语言实现线性表";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A78B177207F0D6400929A0A /* main.m in Sources */,
+				1A78B17F207F1CCC00929A0A /* LJListArray.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

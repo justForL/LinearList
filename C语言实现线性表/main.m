@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LJListArray.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        LJListArray *array1 = createList(10);
+        LJListArray *array2 = createList(10);
+        LJListArray *array3 = createList(10);
+        printf("%p\n",array1);
+        printf("%p\n",array2);
+        printf("%p\n",array3);
     }
     return 0;
 }
