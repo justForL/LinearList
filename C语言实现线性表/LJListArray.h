@@ -64,4 +64,22 @@ int arrayLength(LJListArray *array);
  */
 LJValuesNode getData(LJListArray *array, int index);
 
+
+/**
+ 插入数据
+
+ @param array array
+ @param index index
+ @param value value
+ */
+void insertData(LJListArray *array, int index, LJValuesNode value);
+
+
+/**
+ 增加数据
+
+ @param array array
+ @param value values
+ */
+
 #endif /* LJListArray_h */

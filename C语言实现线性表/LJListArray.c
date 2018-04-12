@@ -58,3 +58,19 @@ LJValuesNode getData(LJListArray *array, int index) {
     }
     return array->value[index];
 }
+
+
+
+void insertData(LJListArray *array, int index, LJValuesNode value) {
+    if (array == NULL || index < 0 || index > array->length || value == NULL || array->length == array->capacity) {
+        return;
+    }
+    //向后各串一位
+    for (int i = array->length - 1; i >= index; i--) {
+        array->value[i+1] = array->value[i];
+    }
+    //对index位进行赋值
+    array->value[index] = value;
+    //不要忘记增加线性表长度
+    array->length++;
+}
