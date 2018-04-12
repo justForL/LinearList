@@ -90,3 +90,15 @@ void setData(LJListArray *array, int index, LJValuesNode value) {
     }
     array->value[index] = value;
 }
+
+
+void delateData(LJListArray *array, int index) {
+    if (array == NULL || index > array->length) {
+        return;
+    }
+    for (int i = index+1; i < array->length; i++) {
+        array->value[i-1] = array->value[i];
+    }
+    array->length--;
+}
+

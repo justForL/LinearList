@@ -94,6 +94,14 @@ void addData(LJListArray *array, LJValuesNode value);
 void setData(LJListArray *array, int index, LJValuesNode value);
 
 
+/**
+ 删除数据
+ 
+ @param array array
+ @param index index
+ */
+void delateData(LJListArray *array, int index);
+
 
 
 #endif /* LJListArray_h */
