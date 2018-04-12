@@ -81,5 +81,19 @@ void insertData(LJListArray *array, int index, LJValuesNode value);
  @param array array
  @param value values
  */
+void addData(LJListArray *array, LJValuesNode value);
+
+
+/**
+ 设置数据(覆盖原位置的值)
+
+ @param array array
+ @param index index
+ @param value value
+ */
+void setData(LJListArray *array, int index, LJValuesNode value);
+
+
+
 
 #endif /* LJListArray_h */
