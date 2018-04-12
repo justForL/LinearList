@@ -50,3 +50,11 @@ int arrayLength(LJListArray *array) {
     }
     return 0;
 }
+
+
+LJValuesNode getData(LJListArray *array, int index) {
+    if (array == NULL || index < 0 || index >= array->length ) {
+        return NULL;
+    }
+    return array->value[index];
+}

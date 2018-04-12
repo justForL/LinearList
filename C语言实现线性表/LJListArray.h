@@ -54,4 +54,14 @@ void cleanArray(LJListArray *array);
  */
 int arrayLength(LJListArray *array);
 
+
+/**
+ 获取指定位置的元素
+
+ @param array array
+ @param index index
+ @return result
+ */
+LJValuesNode getData(LJListArray *array, int index);
+
 #endif /* LJListArray_h */
