@@ -39,5 +39,19 @@ LJListArray * createList(int capacity);
 void destroyArray(LJListArray  *array);
 
 
+/**
+ 清空线性表
+ 
+ @param array array
+ */
+void cleanArray(LJListArray *array);
+
+
+/**
+ 获取线性表的长度
+
+ @param array array
+ */
+int arrayLength(LJListArray *array);
 
 #endif /* LJListArray_h */

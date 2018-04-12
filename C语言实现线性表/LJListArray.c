@@ -35,3 +35,18 @@ void destroyArray(LJListArray  *array) {
         free(array);
     }
 }
+
+
+void cleanArray(LJListArray *array) {
+    if (array) {
+        array->length = 0;
+    }
+}
+
+
+int arrayLength(LJListArray *array) {
+    if (array) {
+        return array->length;
+    }
+    return 0;
+}
