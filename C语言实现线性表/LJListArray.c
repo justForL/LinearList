@@ -25,3 +25,13 @@ LJListArray * createList(int capacity) {
     }
     return array;
 }
+
+
+void destroyArray(LJListArray  *array) {
+    if (array) {
+        //先干掉value的堆控件
+        free(array->value);
+        //再释放array
+        free(array);
+    }
+}

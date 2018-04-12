@@ -31,4 +31,13 @@ typedef struct {
  */
 LJListArray * createList(int capacity);
 
+/**
+ 销毁线性表
+
+ @param array array
+ */
+void destroyArray(LJListArray  *array);
+
+
+
 #endif /* LJListArray_h */
